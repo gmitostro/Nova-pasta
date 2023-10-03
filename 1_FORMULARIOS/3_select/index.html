@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select</title>
+</head>
+<body>
+    <form action="/users" method="post">
+        <div>
+            <label for="nome">nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+        </div>
+        <!--input radio-->
+        <div>
+            <p>Dia da independencia do brabra</p>
+            <div>
+                <input type="radio" id="opc1" name="indp">
+                <label for="opc1">15 de novembro</label>
+            </div>
+            <div>
+                <input type="radio" id="opc2" name="indp">
+                <label for="opc2">7 de setembro</label>
+            </div>
+            
+            <!--select-->
+            <div>
+                <label for="turma">Selecione sua turma</label>
+                <select name="turma" id="turma">
+                    <option disabled selected>sua turma:</option>
+                    <option value="01ma">01MA</option>
+                    <option value="01mb">01MB</option>
+                </select>
+            </div>
+            
+        </div>
+        <button>enviar</button>
+    </form>
+</body>
+</html>
